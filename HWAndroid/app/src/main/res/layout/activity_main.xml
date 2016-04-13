@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.msb.hw.MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/avea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avea"
+                android:layout_margin="@dimen/radio_button"
+                android:onClick="onClickClickedButton"
+                />
+
+            <RadioButton
+                android:id="@+id/turkcell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/turkcell"
+                android:layout_margin="@dimen/radio_button"
+                android:onClick="onClickClickedButton"/>
+
+            <RadioButton
+                android:id="@+id/vodafone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vodafone"
+                android:layout_margin="@dimen/radio_button"
+                android:onClick="onClickClickedButton"/>
+
+            <RadioButton
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all"
+                android:layout_margin="@dimen/radio_button"
+                android:onClick="onClickClickedButton"/>
+
+        </RadioGroup>
+
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/lisview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_margin="@dimen/button"
+            android:onClick="onClickSaveButton"
+            />
+
+        <Button
+            android:id="@+id/recover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recover"
+            android:layout_margin="@dimen/button"
+            android:onClick="onClickRecoverButton"/>
+
+    </LinearLayout>
+</LinearLayout>

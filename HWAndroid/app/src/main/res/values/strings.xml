@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HW</string>
+    <string name="avea">Avea</string>
+    <string name="turkcell">Turkcell</string>
+    <string name="vodafone">Vodafone</string>
+    <string name="all">All</string>
+    <string name="save">Save</string>
+    <string name="recover">Recover</string>
+</resources>
